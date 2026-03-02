@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Inter';
-  src: url('../fonts/Inter-VariableFont_slnt\,wght.ttf') format('woff2');
+  src: url('../fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
   font-style: normal;
   font-display: swap;
 }
@@ -8,6 +8,10 @@
 :root {
   --carnation: #f35d4f; /* global scope */
   --linen: #fefdf9;
+  --custom-black: #00001a;
+  --sandy-brown: #eeab52;
+  --santas-gray: #9d9eb3;
+  --comet: #61617b;
 }
 
 button {
@@ -63,4 +67,45 @@ body {
 
 .hero-text {
   margin-bottom: 65px;
+}
+
+.sidebar-container {
+  background-color: var(--custom-black);
+  padding: 30px 20px;
+}
+
+.sidebar-container h2,
+.sidebar-container h3,
+.sidebar-container p {
+  margin: 0;
+}
+
+.sidebar-container h2 {
+  color: var(--sandy-brown);
+  margin-bottom: 35px;
+}
+
+.sidebar-container h3 {
+  color: white;
+}
+
+.sidebar-container p {
+  color: var(--santas-gray);
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 35px 0;
+  border-bottom: 1px solid var(--comet);
+}
+
+.sidebar-content:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.sidebar-content:first-of-type {
+  padding-top: 0;
 }
