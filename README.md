@@ -6,6 +6,6 @@
 
 Thanks for checking out this front-end coding challenge.
 
-## The challenge
+## Day 1
 
-Created a new repository for this project and pushed the code.
+Created a new repository for this project and pushed the code. Completed the mobile design. (2.5 hours)

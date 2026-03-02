@@ -12,6 +12,8 @@
   --sandy-brown: #eeab52;
   --santas-gray: #9d9eb3;
   --comet: #61617b;
+  --jumbo: #706f77;
+  --burnt-sienna: #eb5554;
 }
 
 button {
@@ -21,6 +23,15 @@ button {
 
 button:focus {
   outline: transparent 1px auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
 }
 
 body {
@@ -46,6 +57,9 @@ body {
 .hero-description p {
   margin: 0;
   margin-bottom: 30px;
+  color: var(--jumbo);
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .image-container img {
@@ -72,6 +86,7 @@ body {
 .sidebar-container {
   background-color: var(--custom-black);
   padding: 30px 20px;
+  margin-bottom: 65px;
 }
 
 .sidebar-container h2,
@@ -108,4 +123,42 @@ body {
 
 .sidebar-content:first-of-type {
   padding-top: 0;
+}
+
+.articles-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.article-container {
+  display: flex;
+  gap: 25px;
+}
+
+.article-image-container {
+  width: 100px;
+  height: 130px;
+  min-width: 100px;
+  min-height: 130px;
+}
+
+.article-image-container img {
+  width: 100%;
+}
+
+.article-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.article-content h4 {
+  color: var(--burnt-sienna);
+  font-size: 20px;
+}
+
+.article-content h5 {
+  font-weight: 800;
+  font-size: 17px;
 }
