@@ -1,5 +1,5 @@
 async function getData() {
-  const url = '../../public/data.json';
+  const url = 'public/data.json';
   try {
     const response = await fetch(url);
     if (!response.ok) {
