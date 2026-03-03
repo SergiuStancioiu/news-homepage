@@ -42,6 +42,7 @@ body {
   font-family: 'Inter', sans-serif;
   position: relative;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .header-container {
@@ -81,6 +82,14 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 2px;
+  transition:
+    background-color 0.3s ease-in,
+    transform 0.3s ease-out;
+}
+
+.hero-description button:hover {
+  background-color: var(--custom-black);
+  color: var(--linen);
 }
 
 .hero-text {
@@ -106,6 +115,14 @@ body {
 
 .sidebar-container h3 {
   color: white;
+  transition:
+    color 0.2s ease-in,
+    transform 0.2s ease-out;
+}
+
+.sidebar-container h3:hover {
+  color: var(--sandy-brown);
+  cursor: pointer;
 }
 
 .sidebar-container p {
@@ -165,6 +182,14 @@ body {
 .article-content h5 {
   font-weight: 800;
   font-size: 17px;
+  transition:
+    color 0.2s ease-in,
+    transform 0.2s ease-out;
+}
+
+.article-content h5:hover {
+  color: var(--burnt-sienna);
+  cursor: pointer;
 }
 
 .mobile-menu-overlay {
