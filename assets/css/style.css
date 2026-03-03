@@ -328,3 +328,15 @@ body {
     flex-direction: row;
   }
 }
+
+/* For users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .desktop-menu-links-container ul a,
+  .mobile-menu,
+  .mobile-menu-overlay,
+  .article-content h5,
+  .sidebar-container h3,
+  .hero-description button {
+    transition: none; /* disable animations */
+  }
+}
