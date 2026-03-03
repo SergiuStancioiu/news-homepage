@@ -7,11 +7,8 @@ async function getData() {
     }
 
     const result = await response.json();
-    let newsData = result.news;
-    let articlesData = result.articles;
-
-    console.log(result);
-    console.log('articlesData', articlesData);
+    const newsData = result.news;
+    const articlesData = result.articles;
 
     for (const news of newsData) {
       newsCard(news);
