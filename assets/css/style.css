@@ -14,6 +14,8 @@
   --comet: #61617b;
   --jumbo: #706f77;
   --burnt-sienna: #eb5554;
+  --bastille: #1d1a23;
+  --light-gray: #817f8aad;
 }
 
 button {
@@ -38,6 +40,8 @@ body {
   background-color: var(--linen);
   padding: 28px 16px;
   font-family: 'Inter', sans-serif;
+  position: relative;
+  margin: 0;
 }
 
 .header-container {
@@ -161,4 +165,48 @@ body {
 .article-content h5 {
   font-weight: 800;
   font-size: 17px;
+}
+
+.mobile-menu-overlay {
+  background-color: var(--light-gray);
+  width: 100dvw;
+  height: 100dvh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hide-sidebar {
+  overflow: hidden;
+}
+
+.mobile-menu {
+  background-color: var(--linen);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  padding: 27px 25px;
+  height: 100dvh;
+  z-index: 10;
+}
+
+.close-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-weight: 400;
+}
+
+ul li a {
+  text-decoration: none;
+  color: var(--bastille);
+  font-size: 20px;
 }
