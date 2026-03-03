@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
@@ -16,16 +14,18 @@
     <title>News homepage | Frontend Mentor</title>
   </head>
   <body class="hide-sidebar">
+    <!-- Header -->
     <header class="header-container">
       <img src="assets/images/logo.svg" alt="Logo" />
-      <button>
+      <button class="open-menu">
         <img src="assets/images/icon-menu.svg" alt="Hamburger Icon" />
       </button>
     </header>
+    <!-- Mobile menu -->
     <div class="mobile-menu-overlay">
       <div class="mobile-menu">
         <div class="close-button-container">
-          <button>
+          <button class="close-menu">
             <img src="assets/images/icon-menu-close.svg" alt="Close Icon" />
           </button>
         </div>
@@ -40,8 +40,8 @@
         </nav>
       </div>
     </div>
-
     <main>
+      <!-- Hero-->
       <section class="hero-container">
         <div class="image-container">
           <picture>
@@ -68,6 +68,7 @@
           </div>
         </div>
       </section>
+      <!-- Sidebar -->
       <aside class="sidebar-container">
         <h2>New</h2>
         <div class="sidebar-content">
@@ -89,6 +90,7 @@
           </p>
         </div>
       </aside>
+      <!-- Articles list -->
       <section class="articles-list-container">
         <div class="article-container">
           <div class="article-image-container">
@@ -126,5 +128,6 @@
       </section>
     </main>
     <footer></footer>
+    <script src="assets/js/mobile-menu.js"></script>
   </body>
 </html>
