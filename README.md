@@ -16,4 +16,4 @@ Created a new repository for this project and pushed the code. Completed the mob
 
 ## Day 2
 
-Worked on the mobile menu design and functionality, added hover states for links and buttons, and dynamically added news and articles. (2 hours)
+Worked on the mobile menu design and functionality, added hover states for links and buttons, and dynamically added news and articles. Worked on desktop design(3 hours)
