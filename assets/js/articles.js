@@ -45,6 +45,7 @@ function articleCard(article) {
 
   const clone = articleTemplate.content.cloneNode(true);
 
+  clone.querySelector('.article-number').innerText = article.id;
   clone.querySelector('.article-title').innerText = article.title;
   clone.querySelector('.article-text').innerText = article.text;
   clone.querySelector('.article-image').src =
