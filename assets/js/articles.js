@@ -47,6 +47,8 @@ function articleCard(article) {
 
   clone.querySelector('.article-title').innerText = article.title;
   clone.querySelector('.article-text').innerText = article.text;
+  clone.querySelector('.article-image').src =
+    `assets/images/${article.image}.jpg`;
 
   articlesListContainer.appendChild(clone);
 }
